@@ -10,7 +10,7 @@
 
 #include "BluetoothSerial.h"
 
-//#define AUTO_PAIR // Uncomment to automatically authenticate ESP32 side
+#define AUTO_PAIR // Uncomment to automatically authenticate ESP32 side
 
 // Check if Bluetooth is available
 #if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
@@ -27,7 +27,7 @@
 #error Simple Secure Pairing for Bluetooth is not available or not enabled.
 #endif
 
-const char *deviceName = "ESP32_SSP_example";
+const char *deviceName = "ESP32test";
 
 // The following lines defines the method of pairing
 // When both Input and Output are false only the other device authenticates pairing without any pin.
